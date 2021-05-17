@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.jurnalulAnneiFrank">
+
+    <RelativeLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Rel_wind2_img">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:id="@+id/window2_image1"
+            android:src="@drawable/book"/>
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/window2_image1"
+            >
+
+            <TextView
+                android:id="@+id/TV3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="32dp"
+                android:layout_alignParentRight="true"
+                android:text="Jurnalul Annei Frank de Anna Frank"
+                android:layout_weight="1"
+                android:gravity="center"
+                />
+
+                <RatingBar
+                    android:id="@+id/rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:numStars="5"
+                    android:stepSize="0.1"
+                    android:isIndicator="true" />
+
+            </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:layout_width="400dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/layout1">
+            <TextView
+                android:id="@+id/info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_alignParentRight="true"
+                android:text="Editura Humanitas"
+                android:layout_weight="1"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/disponibilitate"
+                android:layout_width="00dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                android:text="Disponibila"
+                android:gravity="center"
+                android:textSize="20dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/layout2">
+            <TextView
+                android:id="@+id/descriere"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_alignParentRight="true"
+                android:text="Povestea tragică a Annei Frank e bine cunoscută. Împreună cu familia ei şi alţi cunoscuţi evrei, Anne a stat ascunsă timp de doi ani (6 iulie 1942–4 august 1944), de teama deportării în lagăr, în aşa-numita Anexă a sediului firmei patronate de tatăl său, în Amsterdamul ocupat de germani. Avea 13 ani când a intrat în Anexă. A ţinut aici un jurnal (început anterior, în 12 iunie 1942), devenind la un moment dat conştientă că el va reprezenta un document important după ce războiul se va sfârşi. În 4 august 1944, aşadar nu mult după debarcarea Aliaţilor în Normandia, când finalul recluziunii părea foarte aproape, Anne şi ceilalţi şapte locatari ai Anexei sunt arestaţi şi mai târziu deportaţi cu ultimul transport spre Auschwitz. Cu excepţia lui Otto Frank, toți vor muri. Anne şi sora ei se sting de tifos la Bergen-Belsen în februarie sau martie 1945. Eliberat din lagărul de la Auschwitz, tatăl Annei va publica şi va face cunoscut în toată lumea jurnalul fiicei sale."
+                android:layout_weight="1"
+                android:gravity="center"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</FrameLayout>

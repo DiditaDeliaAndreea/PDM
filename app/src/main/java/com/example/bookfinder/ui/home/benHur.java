@@ -1,0 +1,34 @@
+package com.example.bookfinder.ui.home;
+
+import androidx.lifecycle.ViewModelProvider;
+
+import android.os.Bundle;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+
+import com.example.bookfinder.R;
+
+public class benHur extends Fragment {
+
+    public static com.example.bookfinder.ui.home.benHur newInstance() {
+        return new com.example.bookfinder.ui.home.benHur();
+    }
+
+    @Override
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
+                             @Nullable Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_ben_hur, container, false);
+        ImageView simpleImageView=(ImageView) view.findViewById(R.id.window2_image2);
+
+        return view;
+    }
+
+
+}

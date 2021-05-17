@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.jurnalulAnneiFrank">
+
+    <RelativeLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Rel_wind2_img">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:id="@+id/window2_image2"
+            android:src="@drawable/book1"/>
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/window2_image2"
+            >
+
+            <TextView
+                android:id="@+id/TV3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="32dp"
+                android:layout_alignParentRight="true"
+                android:text="Poveste de Crăciun de Charles Dickens"
+                android:layout_weight="1"
+                android:gravity="center"
+                />
+
+            <RatingBar
+                android:id="@+id/rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/ratingBarStyleSmall"
+                android:numStars="5"
+                android:stepSize="0.1"
+                android:isIndicator="true" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:layout_width="400dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/layout1">
+            <TextView
+                android:id="@+id/info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_alignParentRight="true"
+                android:text="Editura Arthur"
+                android:layout_weight="1"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/disponibilitate"
+                android:layout_width="00dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                android:text="Disponibila"
+                android:gravity="center"
+                android:textSize="20dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/layout2">
+            <TextView
+                android:id="@+id/descriere"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_alignParentRight="true"
+                android:text="Povestea de Craciun de Charles Dickens a fost publicata cu foarte multi ani in urma. De atunci, este citita cu incantare de copii si de parinti, iar farmecul ei se arata si mai mult in preajma sarbatorilor. Este povestea unui batran morocanos si zgarcit, Ebenezer Scrooge, pe care nimic nu pare sa il mai multumeasca. In noaptea de Ajun este vizitat de stafia fostului sau partener de afaceri Jacob Marley, apoi de inca trei spirite. Acestea ii arata lui Scrooge cum poate rascumpara suferinta pe care le-a provocat-o celor din jurul sau: in loc de tristete, singuratate si disperare poate alege bucuria de a petrece Craciunul alaturi de cei apropiati, devenind astfel mai bun si mai fericit."
+                android:layout_weight="1"
+                android:gravity="center"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</FrameLayout>
